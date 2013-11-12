@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>View All Packages</title>
+</head>
+
+
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="../css/Style3.css" type="text/css" media="all" />	
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/style4.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/Style_addCpkg.css" type="text/css" media="all" />
+	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+		<script src="../js/modernizr.custom.js"></script>
+	<![endif]-->
+	<script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="../js/functions.js" type="text/javascript"></script>
+        <script src="../js/productmodel.js"></script>
+
+        <script language="JavaScript" type="text/javascript">
+	
+
+</script>
+
+
+</head>
+ <body>
+<!-- header -->
+		<header>
+		<!-- Logo + Search + Navigation -->
+		
+		<div class="cl">&nbsp;</div>
+		<h1 id="logo"><a href="../LoginController?action=Home"></a></h1>
+			<center><p class="ttl"><font color="#33CCCC">G</font><font color="white">lobe</font> <font color="#33CCCC">C</font><font color="white">onnect</font></p>
+		</center>
+		
+		<div class="cl">&nbsp;</div>
+		
+		<div id="navigation" style="position : absolute; margin-left: 550px;">
+			<ul>
+			    <li>
+			    	<a href="../LoginController?action=Home" ><span>Home</span></a>
+			    	
+			    </li>  
+			    
+			     <li>
+			    	<a href="../html/About Us.html" class="active"><span>About Us</span></a>
+			    	
+			     </li>
+			     
+
+			      <li>
+			    	<a href="../html/Contact Us.html"><span>Contact Us</span></a>
+			    	
+			    </li>
+			    <li>
+			    	<a href="LoginController?action=logOut"><span>&nbsp;&nbsp;Logout</span></a>
+			    	
+			    </li>
+			</ul>
+			
+		</div>
+		
+		<!-- END Logo + Search + Navigation -->
+		
+			
+		</header>
+		<!-- end of header -->
+
+		
+		<!-- slider -->
+		<section class="slider-section">
+		
+		<div id="menu" style="position:absolute;width:230px;heigth:327px;padding-left: 30px;">
+			</br>
+			</br>
+			<ul>
+			    <li>
+			    	<a href="#" ><span>User Administration</span></a></br>
+				
+
+			    	
+			    </li>
+			   <li>
+			    	<a href="#"><span>Product Management &nbsp;&nbsp;&nbsp;</span></a></br>
+			    	<ul>
+			    		<li><a href="#">Product Model</a>
+						<ul>
+						<li><a href="../ProductModelController">Add product model</a></li>
+						<li><a href="../jsp/vw.jsp">View product model</a></li>
+						</ul>
+					</li>
+			    		<li><a href="#">Product Stock</a>
+						<ul>
+						<li><a href="../StockController?action=getID">Add product stock</a></li>
+						<li><a href="../jsp/Query.jsp">View product stock</a></li>
+						<li><a href="../jsp/Vie.jsp">Delete product stock</a></li>
+						</ul>
+					</li>
+			    		<li><a href="#">Sales Promotion</a>
+						<ul>
+						<li><a href="../jsp/AddSalesPromoPkg.jsp">Add package</a></li>
+						<li><a href="../jsp/Virtual.jsp">View package</a></li>
+						</ul>
+					</li>
+			    		
+			    	</ul>
+			    </li>
+			    
+			    
+			   
+			    <li>
+			    	<a href="#"><span>Order Processing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+					
+			    	
+			    </li>
+			    
+			</ul>
+		</div>	
+
+<!-- form -->
+<div id="main">
+<fieldset style="margin-left:275px;heigth:250px; margin-right:10px;">
+	<legend><h1>&nbsp&nbsp Complementary Package </h1></legend>
+	</br></br></br></br>
+
+<form name="viebyid" action="ViewSalesPromoPkgById.html" method="post"><h3>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1.&nbsp&nbsp&nbsp<input type="submit" value="View a particular Package"></input>
+</h3></form>
+</br></br>
+
+<form name="viewall" action="../SalesPromoPkgController" method="post"><h3>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2.&nbsp&nbsp&nbsp<input type="hidden" value="viewAll" name="action"></input>
+<input type="submit" value="View all Packages"></input>
+</h3>
+</br>
+</br>
+</br>
+</br></br>
+</form>
+</fieldset>
+</div>
+</section>
+			
+		
+		
+		
+		<!-- end of slider -->
+		
+		<!-- main -->
+		<!-- heading -->
+				
+				<!-- heading -->
+		<!-- end of main -->
+		
+		
+	<!-- footer -->
+	
+		<div id="footer">
+		
+			<!-- footer-top -->
+			<div class="footer-top">
+				
+			</div>
+			<!-- end of footer-top -->
+			<center><div class="copy" >
+				<p ><font size=2 color="white">Copyright ©  2012 - Globe Connect - All right reserved.</p>
+			</div></center>
+		
+	</div>	
+	
+	<!-- end of footer -->
+
+</body>
+</html>

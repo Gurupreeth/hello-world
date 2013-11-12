@@ -1,0 +1,41 @@
+<html>
+<head>
+<style type="text/css">
+div#list {
+  background-color: #DFDFDF;
+  color: #000;
+  overflow: scroll;
+  width: 15em;
+  height: 10em;
+  padding: 10px;
+  text-align: left;
+}
+</style>
+<script type="text/javascript">
+// Created by: James Robertson | http://www.r0bertson.co.uk
+// This script downloaded from www.JavaScriptBank.com
+
+function addText() {
+  olist = document.getElementById('list');
+  op = document.createElement('p');
+  op.innerHTML = 'More text ...';
+  ocontent = document.getElementById('content');
+  ocontent.appendChild(op);
+  olist.scrollTop = olist.scrollHeight;
+}
+</script>
+</head>
+<body>
+<p>A simple chat-style display</p>
+
+<div id="list">
+  <div id="content">
+  <p class="other_user">Good afternoon. How are you?</p>
+  <p class="other_user">Hello?</p>
+  <p class="other_user">Is anybody there?</p>
+  </div>
+</div>
+<p>
+<div id="toolbar"><input type="button" value="add text" onclick="addText()" /></div>
+</body>
+</html>

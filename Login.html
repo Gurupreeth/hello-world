@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Login</title>
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	<link rel="stylesheet" href="css/Style3.css" type="text/css" media="all" />	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+	
+
+	<link href="css/login-box.css" rel="stylesheet" type="text/css" />
+
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+		<script src="js/modernizr.custom.js"></script>
+	<![endif]-->
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>
+	<script language="JavaScript" type="text/javascript">
+	
+	function valfrm()
+	{
+		
+		valid= true;
+		var letters = /^[A-Za-z]+$/;
+		var numbers = /^[0-9]+$/; 
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+		var uid=document.loginpage.uid.value;
+		var pwd=document.loginpage.pwd.value;
+		var len=uid.length;
+		if (uid==null || uid=="")
+		{
+			//alert("Please the User id must be filled out");
+			document.getElementById("error").innerHTML='Please enter user id.';
+			return false;
+			valid=false;
+		}
+		if(len<6)
+		{
+			//alert("Please enter correct user id.");
+			document.getElementById("error").innerHTML='Please enter correct user id.';
+			return false;
+			valid=false;
+		}
+		
+		if (document.loginpage.pwd.value == "")
+		{
+			document.getElementById("error1").innerHTML='Please enter password.';
+			//alert("Please enter password.");
+			return false;
+			valid= false;
+		}
+
+		return valid;
+	}
+
+	</script>
+</head>
+ <body>
+	<!-- header -->
+		<header>
+		<!-- Logo + Search + Navigation -->
+		
+		<div class="cl">&nbsp;</div>
+		<h1 id="logo"><a href="#"></a></h1>
+			<center><p class="ttl"><font color="#33CCCC">G</font><font color="white">lobe</font> <font color="#33CCCC">C</font><font color="white">onnect</font></p>
+		</center>
+		
+		<div class="cl">&nbsp;</div>
+		
+		<div id="navigation" style="position : absolute; margin-left: 550px;">
+			<ul>
+			   
+			    
+			     <li>
+			    	<a href="html/abt us.html"><span>About Us</span></a>
+			    	
+			     </li>
+			  
+
+			      <li>
+			    	<a href="html/contact_us.html"><span>Contact Us</span></a>
+			    	
+			    </li>
+			</ul>
+			
+		</div>
+		
+		<!-- END Logo + Search + Navigation -->
+		
+			
+		</header>
+		<!-- end of header -->
+
+	<!-- wrapper -->
+	<div id="wrapper">
+		
+		
+		
+		<div style="position:absolute;margin-left:25px;">
+
+
+	<div id="login-box">
+	<form name="loginpage" onsubmit="return valfrm()" action="LoginController" method="post">
+	<H2>Login</H2>
+	<input type="hidden" value="loginIM" name="action" ></input>
+	<br/> 	
+	<div >User ID:<font color="#FF6666">*</font></font></div>
+	<div id="login-box-field" style="margin-top:5px;">
+	<input name="uid" class="form-login" title="Username" value="" onblur="return valfrm()"	size="24" 	maxlength="20" />
+	<font size=2 id="error" color="FF6666"></font></div>
+	
+	<div >Password:<font color="#FF6666">*</font></font></div>
+	<div id="login-box-field">
+	<input name="pwd" type="password" class="form-login" title="Password" value="" onblur="return valfrm()"	 size="24" 	maxlength="20" />
+	<font size=2 id="error1" color="FF6666"></font></div>
+	
+	<br />
+	
+	<br />
+	<br />
+	<input type="image" src="css/images/login-btn.png"></input> 
+
+	</form>
+
+
+	</div>
+
+	</div>
+	
+
+		<!-- slider -->
+		<section class="slider-section">
+			<div class="shell">
+				<div class="slider-holder"  style="left:350px;>
+					<span class="slider-shadow"></span>
+					<div class="slider flexslider">
+						<ul class="slides">
+							<li>
+								<img src="css/images/slide-img.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>Apple ipad</h3>
+									<p>iPad is a magical window where nothing comes between you and what you love. Now that experience is even more incredible with the new iPad.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+							<li>
+													<img src="css/images/Sony-Xperia-U-Smart-Phone-Spec-and-Indian-Price.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>Sony Xperia Series</h3>
+									<p>Xperia™ - Android smartphones from Sony. Create, Listen, Watch and Play. Do it all, whenever, wherever with Sony Xperia smartphones.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+							<li>
+								<img src="css/images/HTC-J-Butterfly.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>HTC-J-Butterfly</h3>
+									<p>HTC has launched a new flagship Android smartphone with a 5-inch, 1080p display, called the HTC J Butterfly.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+
+							<li>
+								<img src="css/images/sony_tablet.png" alt="" />
+								<div class="slide-cnt">
+									<h3>Sony Tablet</h3>
+									<p>Sony Tablet is evolving to give you an even speedier, more satisfying multimedia experience. New system update with Android 4.0.3 </p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+
+                                                         <li>
+								<img src="css/images/Motorola-Droid-RAZR-HD.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>Motorola-Droid-RAZR</h3>
+									<p>DROID RAZR MAXX has the longest talk time of any 4G Android smartphone. Its extended phone battery life is two times that of leading competitors.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+							<li>
+								<img src="css/images/samsung_s2.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>Samsung Galaxy S-II</h3>
+									<p>Samsung Galaxy S II Android smartphone.Features 3G, 4.3Super AMOLED Plus capacitive touchscreen, 8 MP camera and lots more.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+
+							<li>
+								<img src="css/images/iPhone5HandsOn-08-580-90.jpg" alt="" />
+								<div class="slide-cnt">
+									<h3>Apple iPhone5</h3>
+									<p>It's so thin and so light, yet iPhone 5 features a larger display, a faster chip, the latest wireless technology, an 8MP iSight camera, and more.</p>
+									<a href="#" class="slider-btn">Explore More</a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!-- end of slider -->
+		<!-- main -->
+		<div class="main">
+			<div class="shell">
+				<!-- heading -->
+				<div class="heading">
+					<span class="ico"></span>
+					<h2>Welcome to the online gadget world of Globe Connect.</h2>
+					<h3>Now enjoy a complete tour of the latest gadgets along with exciting offers.</h3>
+				</div>
+				<!-- heading -->
+				<!-- cols -->
+				<section class="cols">
+					<div class="col">
+						<h4><a href="#">Latest news</a></h4>
+						<a href="#"><img src="css/images/news_logo1.png" alt="" /></a>
+						<p>Learn about what's next in the market and the latest launches.</p>
+					</div>
+					<div class="col">
+						<h4><a href="#">Gadget of the day</a></h4>
+						<a href="#"><img src="css/images/gadgets-logo.gif" alt="" /></a>
+						<p>It tells you about the expert's choice for the latest gadget available. Now you can pick your favourite Gadget more easily. </p>
+					</div>
+					<div class="col">
+						<h4><a href="#">Latest Software updates</a></h4>
+						<a href="#"><img src="css/images/free-gre-downloads_gre-software.jpg" alt="" /></a>
+						<p>Check for latest softwares upgrades.Keep yourself updated.</p>
+					</div>
+					<div class="col">
+						<h4><a href="#">Android Corner</a></h4>
+						<a href="#"><img src="css/images/android.jpg" alt="" /></a>
+						<p>Download Apps for free. Experience thrill in gaming on your palm. </p>
+					</div>
+					<div class="cl">&nbsp;</div>
+				</section>
+				<!-- end of cols -->
+				<!-- content -->
+				<section class="content">
+					<h4>About Us</h4>
+					<div class="box">
+						<p>Globe Connect is one of the leading Online Telecom Store in India. It is the one stop shop for all your telecom related requirements.GC provides you with round the clock services. Our delivery and exchange centres are based in more than 42 cities in India.</p>
+					</div>	
+				</section>
+				<!-- end of content -->
+				<!-- aside -->
+				<aside>
+					<div class="widget">
+						<h4>Our Services</h4>
+						<ul>
+							<li><a href="#">Software Upgrades</a></li>
+							<li><a href="#">Services and Repairs</a></li>
+							<li><a href="#">24-Hour Delivery</a></li>
+							<li><a href="#">Accesories</a></li>
+							<li><a href="#">Support</a></li>
+						</ul>
+					</div>
+				</aside>
+				<!-- end of aside -->
+				<div class="cl">&nbsp;</div>
+			</div>	
+		</div>
+		<!-- end of main -->
+		<div id="footer-push"></div>
+	</div>
+	<!-- end of wrapper -->
+	<!-- footer -->
+	<div id="footer">
+		<!-- shell -->
+		<div class="shell">
+			<!-- footer-top -->
+			<div class="footer-top">
+				<nav class="footer-nav">
+					
+					<a href="#">Services</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Blog</a>
+					<a href="#">Contact Us</a>
+				</nav>
+				<div class="footer-logo"><a href="#">Particular</a></div>
+			</div>
+			<!-- end of footer-top -->
+			<center><div class="copy" >
+				<p ><font size=2 color="white">Copyright ©  2012 - Globe Connect - All right reserved.</p>
+			</div></center>
+		</div>
+		<!-- end of shell -->
+	</div>
+	<!-- end of footer -->
+</body>
+</html>
